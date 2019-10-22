@@ -21,6 +21,6 @@ int main(void){
         n = tmp;
     }//計算最大公因數
 
-    printf("The lowest terms: %d/%d", num / m, deno / m);//輸出最簡分數
+    printf("The lowest terms: %d/%d\n", num / m, deno / m);//輸出最簡分數
     return 0;
 }

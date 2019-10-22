@@ -13,7 +13,7 @@ int main(void){
     char ans[60], input[60]; //宣告變數
     double inputNum;
     while (1){
-        printf("Enter a number:");
+        printf("Enter a number: ");
         scanf("%s", input);
         inputNum = atof(input);
         if(inputNum<=0){
@@ -24,7 +24,7 @@ int main(void){
 
     }//輸入並找出最大
     
-    printf("\nThe largest number entered was %s", ans);//輸出答案
+    printf("\nThe largest number entered was %s\n", ans);//輸出答案
 
     return 0;
 }

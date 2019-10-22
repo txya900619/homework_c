@@ -13,6 +13,6 @@ int main(void){
         e += 1 / devi;
         devi *= i;
     }
-    printf("Approximation of e: %f", e);
+    printf("Approximation of e: %f\n", e);
     return 0;
 }

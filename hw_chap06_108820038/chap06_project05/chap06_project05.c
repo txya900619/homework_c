@@ -17,6 +17,7 @@ int main(void){
         printf("%d", num % 10);
         num /= 10;
     } while (num);
+    printf("\n")
 
 
     return 0;
