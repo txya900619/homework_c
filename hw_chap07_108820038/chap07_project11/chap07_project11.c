@@ -14,6 +14,6 @@ int main(void){
     scanf("%s", first);
     scanf("%s", last);//input
 
-    printf("%s, %c.", last, first[0]);//output
+    printf("%s, %c.\n", last, first[0]);//output
     return 0;
 }
