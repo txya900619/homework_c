@@ -29,7 +29,7 @@ int main(void){
         
     }//轉換
 
-    printf("%s", input);//output
+    printf("%s\n", input);//output
 
     return 0;
 }
