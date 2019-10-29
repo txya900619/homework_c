@@ -8,9 +8,11 @@
 /*****************************************************************/
 #include <stdio.h>
 int main(void){
-    int num;
+    int num;//宣告變數
+
     printf("Enter a positive integer :");
-    scanf("%d", &num);
+    scanf("%d", &num);//輸入
+
     short shor_ans = 1;
     int int_ans = 1;
     long l_ans = 1;
@@ -26,13 +28,16 @@ int main(void){
         f_ans *= i;
         df_ans *= i;
         ldf_ans *= i;
-    }
+    }//處理輸入
+
     printf("Factorial of %d (short)             :%hd\n",num, shor_ans);
     printf("Factorial of %d (int)               :%d\n",num, int_ans);
     printf("Factorial of %d (long)              :%ld\n", num,l_ans);
     printf("Factorial of %d (long long)         :%lld\n",num, ll_ans);
     printf("Factorial of %d (float)             :%f\n",num, f_ans);
     printf("Factorial of %d (double)            :%f\n", num,df_ans);
-    printf("Factorial of %d (long double)       :%Lf\n", num,ldf_ans);
+    printf("Factorial of %d (long double)       :%Lf\n", num,ldf_ans);//輸出
+
+    return 0;
 
 }
