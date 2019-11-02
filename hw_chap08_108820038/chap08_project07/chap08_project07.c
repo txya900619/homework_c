@@ -3,7 +3,7 @@
 /* Author: 陳力瑋 (put your name here)                           */
 /* ID: 108820038 (your student ID here)                          */
 /* Date: 2019.10.29 (put program development started date here   */
-/* Purpose: gooooooooooooood                                    */
+/* Purpose: sum row and column                                   */
 /* Change History: 2019.10.29 初打                               */
 /*****************************************************************/
 #include <stdio.h>
@@ -11,7 +11,7 @@
 #include<string.h>
 int main(void){
     int arr[5][5];
-    int ans[5];//decalre variable
+    int ans[5];//declare variable
 
     for(int i = 0 ;i<5;i++){
         printf("Enter row %d: ",i+1);

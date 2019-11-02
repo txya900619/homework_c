@@ -3,7 +3,7 @@
 /* Author: 陳力瑋 (put your name here)                           */
 /* ID: 108820038 (your student ID here)                          */
 /* Date: 2019.10.29 (put program development started date here   */
-/* Purpose: gooooooooooooood                                    */
+/* Purpose: reverse sentence to B1FF                             */
 /* Change History: 2019.10.29 初打                               */
 /*****************************************************************/
 #include <stdio.h>
@@ -52,7 +52,7 @@ int main(void){
             ans[i]=input[i];
             break;
         }
-    }//change sring
+    }//change string
 
     printf("In B1FF-speak: %s!!!!!!!!!!\n",ans);//output
 

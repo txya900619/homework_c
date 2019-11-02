@@ -2,16 +2,17 @@
 /* Class: Computer Programming, Fall 2019                        */
 /* Author: 陳力瑋 (put your name here)                           */
 /* ID: 108820038 (your student ID here)                          */
-/* Date: 2019.10.10 (put program development started date here   */
-/* Purpose: 1*1/1!*1/2!....1/n!                                  */
-/* Change History: 2019.10.15初打                                */
+/* Date: 2019.10.29 (put program development started date here   */
+/* Purpose: reverse sentence                                     */
+/* Change History: 2019.10.29初打                                */
 /*****************************************************************/
 #include <stdio.h>
 #include <string.h>
 int main(void){
     char ans[100][100];
     int count =0;
-    char last;
+    char last;//declare variable
+
     printf("Enter a sentence: ");
     while(1){
         char a[100];
@@ -33,11 +34,13 @@ int main(void){
             break;
         }
 
-    }
+    }//input and save in array
+
     printf("Reversal of sentence:");
     for(int i = count-1 ;i>=0;i--){
         printf(" %s",ans[i]);
     }
-    printf("%c\n",last);
+    printf("%c\n",last);//reverse and output
+
     return 0;
 }
