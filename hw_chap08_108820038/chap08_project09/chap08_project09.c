@@ -2,9 +2,9 @@
 /* Class: Computer Programming, Fall 2019                        */
 /* Author: 陳力瑋 (put your name here)                           */
 /* ID: 108820038 (your student ID here)                          */
-/* Date: 2019.10.19 (put program development started date here   */
-/* Purpose: 簡寫姓名                                             */
-/* Change History: 2019.10.19初打                                */
+/* Date: 2019.10.29 (put program development started date here   */
+/* Purpose: 走迷宮                                              */
+/* Change History: 2019.10.29初打                                */
 /*****************************************************************/
 #include <stdio.h>
 #include<stdlib.h>

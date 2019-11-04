@@ -7,7 +7,7 @@
 /* Change History: 2019.10.29 初打                               */
 /*****************************************************************/
 #include <stdio.h>
-#include<stdlib.h>
+
 #include<string.h>
 #include<ctype.h>
 int main(void){

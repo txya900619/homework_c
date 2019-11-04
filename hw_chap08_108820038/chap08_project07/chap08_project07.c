@@ -7,8 +7,6 @@
 /* Change History: 2019.10.29 初打                               */
 /*****************************************************************/
 #include <stdio.h>
-#include<stdlib.h>
-#include<string.h>
 int main(void){
     int arr[5][5];
     int ans[5];//declare variable
