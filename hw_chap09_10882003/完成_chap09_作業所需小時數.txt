@@ -2,6 +2,6 @@
 
 ID: 108820038
 
-How many hours you spend on doing the homework? 2hours
+How many hours you spend on doing the homework? 1hours
 
 (remember to delete *.exe)
