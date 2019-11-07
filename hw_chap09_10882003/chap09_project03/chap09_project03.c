@@ -16,7 +16,7 @@ void generate_random_walk(char walk[10][10]){
         for(int j =0;j<10;j++){
             walk[i][j]='.';
         }
-    }
+    }//walk
     srand((unsigned) time(NULL));
     walk[0][0]='A';
     for(char a='B';a<='Z';a++){
