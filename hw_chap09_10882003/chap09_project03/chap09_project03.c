@@ -2,21 +2,22 @@
 /* Class: Computer Programming, Fall 2019                        */
 /* Author: 陳力瑋 (put your name here)                           */
 /* ID: 108820038 (your student ID here)                          */
-/* Date: 2019.10.19 (put program development started date here   */
-/* Purpose: 簡寫姓名                                             */
-/* Change History: 2019.10.19初打                                */
+/* Date: 2019.11.7 (put program development started date here   */
+/* Purpose: walk                                                */
+/* Change History: 2019.11.07初打                                */
 /*****************************************************************/
 #include <stdio.h>
 #include<stdlib.h>
 #include<time.h>
 void generate_random_walk(char walk[10][10]){
     int x=0,y=0,tx,ty;
-    int isFinish=1;
+    int isFinish=1;//declare variable
+
     for(int i =0;i<10;i++){
         for(int j =0;j<10;j++){
             walk[i][j]='.';
         }
-    }//walk
+    }//init
     srand((unsigned) time(NULL));
     walk[0][0]='A';
     for(char a='B';a<='Z';a++){
@@ -53,9 +54,11 @@ void generate_random_walk(char walk[10][10]){
             x=tx;
             y=ty;
             walk[ty][tx]=a;
-        }
+        }//walk
+
     }
-}
+}//walk function
+
 void print_array(char walk[10][10]){
     for(int i = 0 ;i<9;i++){
         for(int j = 0;j<9;j++){
@@ -63,11 +66,13 @@ void print_array(char walk[10][10]){
         }
         printf("\n");
     }
-}
+}//output function
+
 int main(void){
-    char arr[10][10];
+    char arr[10][10];//declare arr
+
     generate_random_walk(arr);
-    print_array(arr);
+    print_array(arr);//call two needed function
 
     
     return 0;
