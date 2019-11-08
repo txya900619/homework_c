@@ -8,17 +8,17 @@
 /*****************************************************************/
 #include <stdio.h>
 int power(int x,int n){
-    int ans=1;
+    int ans=0;
     if(n==0){
       return 1;   
     }
-    if(x==0){
-        return 0;
+     ans = power(x, n / 2);
+    if(n%2==0){
+        return ans*ans;
     }
-    for(int i = 0;i<n;i++){
-        ans*=x;
+    else{
+        return ans*ans* x;
     }
-    return ans;
 }//circulate
 
 int main(void){

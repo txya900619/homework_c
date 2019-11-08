@@ -12,23 +12,24 @@
 int main(void){
     char arr[10][10];
     int x=0,y=0,tx,ty;
-    int isFinish=1;
+    int isFinish=1;//宣告變數
+
     for(int i =0;i<10;i++){
         for(int j =0;j<10;j++){
             arr[i][j]='.';
         }
-    }
-    srand((unsigned) time(NULL));
-    arr[0][0]='A';
+    }//初始化迷宮
+
+    srand((unsigned) time(NULL));//實現真亂數
+
+    arr[0][0]='A';//起點
+
     for(char a='B';a<='Z';a++){
         int dir;
         tx=x;
-        ty=y;
-        
+        ty=y; 
         dir = rand()%4;
-
-        switch (dir)
-        {
+        switch (dir){
             case 0:
                 ty-=1;
                 break;
@@ -55,14 +56,14 @@ int main(void){
             y=ty;
             arr[ty][tx]=a;
         }
-    }
+    }//判斷 形成路徑
+
     for(int i = 0 ;i<9;i++){
         for(int j = 0;j<9;j++){
             printf("%c ",arr[i][j]);
         }
         printf("\n");
-    }
-
+    }//輸出
     
     return 0;
 }
