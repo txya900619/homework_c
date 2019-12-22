@@ -1,4 +1,4 @@
-/*****************************************************************/
+ /*****************************************************************/
 /* Class: Computer Programming, Fall 2019                        */
 /* Author: 陳力瑋 (put your name here)                           */
 /* ID: 108820038 (your student ID here)                          */
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) { //input
     quicksort(a, 0, 9);
     printf("In sorted order : ");
     for (i = 0; i < 10; i++) {
-        printf("%d", a[i]);
+        printf("%d ", a[i]);
     }
     printf("\n");
     return 0;
