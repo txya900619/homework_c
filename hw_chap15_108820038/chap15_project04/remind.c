@@ -17,11 +17,11 @@ int main(void) {
         if (day == 0) {
             break;
         }
-        sprintf(day, "%2d", day);
+        sprintf(day_str, "%2d", day);
         read_line(msg_str, 60);
 
         for (i = 0; i < num_remind; i++) {
-            if(strcmp(day_str,reminders[i]<0){
+            if (strcmp(day_str, reminders[i]) < 0) {
                 break;
             }
         }

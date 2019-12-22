@@ -6,28 +6,9 @@
 /* Purpose: stack                                                */
 /* Change History: 2019.11.17 初打                               */
 /*****************************************************************/
+#include "./stack/stack.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-#define MAX_STACK 100 //max stack
-
-int stack[MAX_STACK];
-int top = -1; //declare stack
-
-void push(int i) {
-    if (top == MAX_STACK) {
-        printf("Expression is too complex\n");
-        exit(0);
-    }
-    stack[++top] = i;
-} //push function
-char pop() {
-    if (top < 0) {
-        printf("Not enough operands in expression\n");
-        exit(0);
-    }
-    return stack[top--];
-} //pop function
 int main(void) {
 
     char c;
@@ -59,7 +40,7 @@ int main(void) {
                     break;
                 case '=':
                     printf("Value of expression : %d\n", pop());
-                    top = 0;
+                    makeempty();
                     printf("Enter an RPN expression : ");
                     break;
                 default:
