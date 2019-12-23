@@ -6,7 +6,7 @@ void quicksort(int a[], int low, int high) {
     middle = split(a, low, high);
     quicksort(a, low, middle - 1);
     quicksort(a, middle + 1, high);
-}
+} //quicksort function
 int split(int a[], int low, int high) {
     int part_element = a[low];
     for (;;) {
@@ -25,4 +25,4 @@ int split(int a[], int low, int high) {
     }
     a[high] = part_element;
     return high;
-}
+} //split int array function

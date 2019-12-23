@@ -5,7 +5,7 @@
 int main(void) {
     char reminders[50][63];
     char day_str[3], msg_str[63];
-    int day, i, j, num_remind = 0;
+    int day, i, j, num_remind = 0; //declare valueary
     for (;;) {
         if (num_remind == 50) {
             printf("-- No space left --\n");
@@ -13,7 +13,7 @@ int main(void) {
         }
 
         printf("Enter day and reminder : ");
-        scanf("%2d", &day);
+        scanf("%2d", &day); //input
         if (day == 0) {
             break;
         }
@@ -29,7 +29,7 @@ int main(void) {
             strcpy(reminders[i], reminders[j - 1]);
         }
         strcpy(reminders[i], day_str);
-        strcat(reminders[i], msg_str);
+        strcat(reminders[i], msg_str); //string processing
 
         num_remind++;
     }
@@ -37,7 +37,7 @@ int main(void) {
     printf("\nDay Reminder\n");
     for (i = 0; i < num_remind; i++) {
         printf(" %s\n", reminders[i]);
-    }
+    } //out put
 
     return 0;
 }
